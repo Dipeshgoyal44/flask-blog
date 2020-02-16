@@ -1,9 +1,12 @@
+#Imports
 from flask import Flask, render_template, url_for, flash, redirect
 from forms import RegistrationForm, LoginForm
 app = Flask(__name__)
 
+#Hash Security Key
 app.config['SECRET_KEY'] = '44ad1670c8d8186ca39190bb09f6a781'
 
+#Temp Data
 posts = [
     {
         'author':'Dipesh Goyal',
@@ -20,6 +23,7 @@ posts = [
 
 ]
 
+#Routes
 @app.route('/')
 @app.route('/home')
 def home():
