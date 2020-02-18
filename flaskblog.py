@@ -29,10 +29,12 @@ posts = [
 def home():
     return render_template('home.html', posts=posts)
 
+#About
 @app.route('/about')
 def about():
     return render_template('about.html', title='About')  
 
+#Register
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     form = RegistrationForm()
@@ -41,6 +43,7 @@ def register():
         return redirect(url_for('home'))
     return render_template('register.html', title='Sign Up', form=form)
 
+#Login
 @app.route('/login',  methods=['GET', 'POST'])
 def login():
     form = LoginForm()
