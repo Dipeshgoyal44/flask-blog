@@ -1,10 +1,15 @@
 #Imports
 from flask import Flask, render_template, url_for, flash, redirect
+from flash_sqlalchemy import SQLAlchemy
 from forms import RegistrationForm, LoginForm
 app = Flask(__name__)
 
 #Hash Security Key
 app.config['SECRET_KEY'] = '44ad1670c8d8186ca39190bb09f6a781'
+
+app.config['SQLALCHEMY_DATABASE_URI'] = '_sqlite:///site.db'
+
+db = SQLAlchemy(app)
 
 #Temp Data
 posts = [
@@ -59,4 +64,3 @@ def login():
 if  __name__ == "__main__":
     app.run(debug=True)
 
-#commit
