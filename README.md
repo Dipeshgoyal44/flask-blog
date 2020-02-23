@@ -10,3 +10,6 @@ Different User Blogs
 
 
 to run: python flaskblog.py
+
+Updates:
+Installed Sqlalchemy: giving erros. with pylint. Vscode related?
