@@ -1,8 +1,8 @@
 #Imports
 from flask import Flask, render_template, url_for, flash, redirect
 from flask_sqlalchemy import SQLAlchemy
-from datetime import datetime
 from forms import RegistrationForm, LoginForm
+from models import User, Post
 app = Flask(__name__)
 
 #Hash Security Key
