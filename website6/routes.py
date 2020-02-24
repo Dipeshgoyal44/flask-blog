@@ -1,14 +1,8 @@
-#Imports
-from flask import Flask, render_template, url_for, flash, redirect
-from flask_sqlalchemy import SQLAlchemy
-from forms import RegistrationForm, LoginForm
-from models import User, Post
-app = Flask(__name__)
+from flask import  render_template, url_for, flash, redirect
+from flaskblog import app
+from flaskblog.forms import RegistrationForm, LoginForm
+from flaskblog.models import User, Post
 
-#Hash Security Key
-app.config['SECRET_KEY'] = '44ad1670c8d8186ca39190bb09f6a781'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
-db = SQLAlchemy(app)
 
 #Dummy Data
 posts = [
@@ -58,8 +52,3 @@ def login():
         else:
             flash('Login Unsuccessful!. Please check your login details.', 'danger')
     return render_template('login.html', title='Login', form=form)
-
-#Server Startup
-if  __name__ == "__main__":
-    app.run(debug=True)
-
