@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 #Hash Security Key
 app.config['SECRET_KEY'] = '44ad1670c8d8186ca39190bb09f6a781'
-app.config['SQLALCHEMY_DATABASE_URI'] = '_sqlite:///site.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 db = SQLAlchemy(app)
 
 #SQL ALCHEMY ERRORS!!!!
@@ -31,8 +31,7 @@ class Post(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'),nullable=False)
 
     def __repr__(self):
-        return f"User('{self.title}', '{self.date_posted}')"
-
+        return f"Post('{self.title}', '{self.date_posted}')"
 
 
 
