@@ -11,7 +11,7 @@ Different User Blogs
 
 to run: python run.py
 
-
+Next to do: Part 6 : User Authentication
 
 
 Credit: Corey Schafer
