@@ -9,5 +9,10 @@ Different User Blogs
 
 
 
-to run: python flaskblog.py
+to run: python run.py
+
+
+
+
+Credit: Corey Schafer
 
