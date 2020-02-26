@@ -1,3 +1,4 @@
+Sql alchemy needs to be updated
 
 #FlaskBlog
 Blogs can be edited and removed by different users
