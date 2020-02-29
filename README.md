@@ -1,4 +1,4 @@
-Sql alchemy needs to be updated
+
 
 #FlaskBlog
 Blogs can be edited and removed by different users
@@ -12,9 +12,7 @@ Different User Blogs
 
 to run: python run.py
 
-install c++ build tools to install bcrypt.
-install bcrypt
-
+30.15
 
 Credit: Corey Schafer
 
