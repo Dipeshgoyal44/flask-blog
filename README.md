@@ -1,3 +1,4 @@
+Sql alchemy needs to be updated
 
 #FlaskBlog
 Blogs can be edited and removed by different users
@@ -9,5 +10,10 @@ Different User Blogs
 
 
 
-to run: python flaskblog.py
+to run: python run.py
+
+Next to do: Part 6 : User Authentication
+
+
+Credit: Corey Schafer
 
