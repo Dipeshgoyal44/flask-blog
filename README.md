@@ -12,7 +12,8 @@ Different User Blogs
 
 to run: python run.py
 
-Next to do: Part 6 : User Authentication
+install c++ build tools to install bcrypt.
+install bcrypt
 
 
 Credit: Corey Schafer
