@@ -2,7 +2,7 @@ from flask import  render_template, url_for, flash, redirect
 from flaskblog import app, db, bcrypt
 from flaskblog.forms import RegistrationForm, LoginForm
 from flaskblog.models import User, Post
-from flask_login import login_user, current_user
+from flask_login import login_user, current_user, logout_user
 db.create_all()
 
 #Dummy Data
@@ -64,5 +64,7 @@ def login():
     return render_template('login.html', title='Login', form=form)
 
 #LogOut
-@app.route('/login',  methods=['GET', 'POST'])
+@app.route('/logout')
 def login():
+    logout_user()
+    return redirect(url_for('home'))
