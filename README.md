@@ -16,3 +16,5 @@ to run: python run.py
 
 Credit: Corey Schafer
 
+Error with account route due to sql constraints.
+
