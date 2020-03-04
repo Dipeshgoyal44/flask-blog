@@ -12,9 +12,8 @@ Different User Blogs
 
 to run: python run.py
 
-30.15
 
 Credit: Corey Schafer
 
-Error with account route due to sql constraints.
+
 
