@@ -13,7 +13,7 @@ Vid 9
 to run: python run.py
 
 
-Credit: Corey Schafer
+Credit: Corey Schaferr
 
 
 
