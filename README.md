@@ -8,7 +8,7 @@ Profile Pic
 Mutiple User
 Different User Blogs
 
-Vid 9
+Vid 8
 
 to run: python run.py
 
