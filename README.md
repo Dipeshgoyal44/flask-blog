@@ -8,12 +8,12 @@ Profile Pic
 Mutiple User
 Different User Blogs
 
-
+Vid 8
 
 to run: python run.py
 
 
-Credit: Corey Schafer
+Credit: Corey Schaferr
 
 
 
