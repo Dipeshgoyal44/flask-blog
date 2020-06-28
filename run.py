@@ -1,4 +1,3 @@
-
 from flaskblog import app
 
 #Server Startup
