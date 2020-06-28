@@ -157,6 +157,7 @@ def send_reset_email(user):
 
 If you did not make this request then simply ignore this email and changes will be made.
 '''
+    mail.send(msg)
 
 
 @app.route("/reset_password", methods = ['GET', 'POST'])
@@ -187,3 +188,4 @@ def reset_token(token):
         flash(f'Your Password has been updated! You can now login.','success')
         return redirect(url_for('login'))
     return render_template('reset_token.html', title = 'Reset Password' , form = form)
+    
