@@ -8,13 +8,8 @@ Profile Pic
 Mutiple User
 Different User Blogs
 
-vid 9
 
 
-to run: python run.py
-
-
-Credit: Corey Schaferr
 
 
 
